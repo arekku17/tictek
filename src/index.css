@@ -5,7 +5,84 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(180deg,
+  rgba(255, 255, 255, 0),
+  rgba(0, 0, 0, 1)),
+  url('../public/img/tic tek.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  font-family: 'Poppins', sans-serif;
 }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+}
+
+.bgGradient{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+  background: linear-gradient(270deg,
+      rgb(11, 236, 178, 0.5),
+      rgba(45, 11, 236, 0.5),
+      rgba(173, 197, 37, 0.5),
+      rgba(236, 11, 79, 0.5),
+      rgba(11, 180, 236, 0.5));
+  background-size: 1000% 1000%;
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%
+  }
+
+  50% {
+    background-position: 100% 50%
+  }
+
+  100% {
+    background-position: 0% 50%
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
