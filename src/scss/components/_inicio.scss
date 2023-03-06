@@ -1,0 +1,54 @@
+.inicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+
+    font-size: 4rem;
+
+    @media (max-width: 1600px) {
+       font-size: 4.3rem;
+    }
+
+    .logo {
+        width: 35vw;
+
+        @media (max-width: 1200px) {
+            width: 60vw
+        }
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        margin-bottom: 40px;
+    }
+
+    .place {
+        text-align: center;
+
+        @media (max-width: 600px) {
+            font-size: 7vw;
+        }
+        
+    }
+
+    .buttonBuy {
+
+        margin-top: 15px;
+        font-size: 2rem;
+
+        span {
+            svg {
+                font-size: 3rem !important;
+            }
+        }
+    }
+
+    .dateInicio{
+        font-weight: 600;
+        color: $secondary-color;
+    }
+}

@@ -1,0 +1,224 @@
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    position: relative;
+    color: #c7c7c7;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+header {
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding-bottom: 20px;
+    z-index: 999;
+
+    transition: all 0.1s ease-out;
+
+    @media (max-width: 1200px) {
+        justify-content: center;
+    }
+
+    .pageTitle {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3rem;
+    }
+
+    .buttonBuy {
+        font-size: 1rem;
+
+        svg {
+            font-size: 2rem !important;
+        }
+
+        span {
+            svg {
+                font-size: 1.5rem !important;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            display: none;
+        }
+    }
+
+    nav {
+
+        .navbarHorizontal {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+
+            li {
+                cursor: pointer;
+
+                a {
+                    padding: 0 10px;
+                    font-size: 1.5rem;
+                }
+
+                a:after {
+                    content: "";
+                    position: absolute;
+                    background-color: $secondary-color;
+                    height: 3px;
+                    width: 0;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.3s;
+                }
+
+                a:hover {
+                    color: #fff;
+                }
+
+                a:hover:after {
+                    width: 100%;
+                }
+
+                .selected {
+                    color: #fff;
+                }
+
+                .selected:after {
+                    content: "";
+                    position: absolute;
+                    background-color: $secondary-color;
+                    height: 3px;
+                    width: 100%;
+                    left: 0;
+                    bottom: -10px;
+                    transition: 0.3s;
+                }
+            }
+
+            @media (max-width: 1200px) {
+                display: none;
+            }
+        }
+
+    }
+
+    .buttonMenu {
+        display: none;
+        cursor: pointer;
+
+        background: none;
+        border: none;
+
+        position: absolute;
+        right: 30px;
+
+        z-index: 999;
+
+        svg {
+            font-size: 3rem;
+            color: white;
+        }
+
+        @media (max-width: 1200px) {
+            display: flex;
+        }
+    }
+
+
+    .menuSide {
+        position: fixed;
+        padding-top: 130px;
+        top: 0;
+        right: -220px;
+        z-index: 3;
+        width: 200px;
+        height: 100vh;
+        
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: $secondary-color;
+        transition: 0.3s all ease-in-out;
+
+        @media (max-width: 1200px) {
+            display: flex;
+        }
+
+        .sidebar {
+            text-align: right;
+
+            li {
+                padding: 10px;
+                cursor: pointer;
+
+                a{
+                    font-size: 16px;
+                    color: black;
+                }
+
+                &:hover {
+                    a {
+                        color: white;
+                    }
+                }
+            }
+        }
+
+        .buy {
+            cursor: pointer;
+            border: rgb(217, 217, 217) solid 2px;
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: white;
+            background: none;
+            margin-top: 50px;
+            
+            p{
+                font-weight: 600;
+            }
+
+            &:hover{
+                border: white solid 2px;
+            }
+        }
+    }
+
+
+    .activeSide{
+        right: 0;
+    }
+
+}
+
+.header-active{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 0;
+    position: fixed;
+
+    img{
+        width: 190px;
+        @media (max-width: 1000px) {
+            width: 80px;
+        }
+
+        @media (max-width: 850px) {
+            width: 180px;
+        }
+    }
+
+    transition: all 0.1s ease-out;
+
+    @media (max-width: 850px) {
+        justify-content: center;
+    }
+
+}
