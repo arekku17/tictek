@@ -40,22 +40,22 @@ const Header = () => {
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="invitados" spy={true} smooth={true} offset={-300}>
+                        <LinkScroll activeClass="selected" to="invitados" spy={true} smooth={true} offset={-50}>
                             Invitados
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="acercade" spy={true} smooth={true} offset={-300}>
+                        <LinkScroll activeClass="selected" to="acercade" spy={true} smooth={true} offset={-50}>
                             Acerca de
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="detalles" spy={true} smooth={true} offset={-300}>
+                        <LinkScroll activeClass="selected" to="detalles" spy={true} smooth={true} offset={-50}>
                             Detalles
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="patrocinadores" spy={true} smooth={true} offset={-300}>
+                        <LinkScroll activeClass="selected" to="patrocinadores" spy={true} smooth={true} offset={-50}>
                             Patrocinadores
                         </LinkScroll>
                     </li>

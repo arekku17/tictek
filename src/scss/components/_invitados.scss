@@ -1,0 +1,66 @@
+.containerInvitados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .listInvitados {
+        width: 70%;
+
+        @media (max-width: 850px) {
+            width: 80%;
+        }
+
+        .invitadoContainer {
+            width: 100%;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 15px;
+
+            img {
+                width: 100%;
+                border-radius: 20px;
+            }
+
+            .nombreInvitado {
+                font-size: 3.5vw;
+                text-transform: uppercase;
+                font-weight: bold;
+
+                @media (max-width: 600px) {
+                    font-size: 8vw;
+                }
+            }
+        }
+
+    }
+
+    .bgInvitados {
+        background-color: rgba(0, 0, 0, 1);
+        background: rgba(0, 0, 0, 1);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(220, 78, 78, 1)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#dc4e4e', GradientType=0);
+        position: absolute;
+        left: -13%;
+        width: 100vw;
+        height: 100%;
+        z-index: -999;
+
+        @media (max-width: 850px) {
+            font-size: 8vw;
+            left: -6%;
+            width: 100vw;
+        }
+
+    }
+}

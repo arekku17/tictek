@@ -6,6 +6,7 @@ import { theme } from '../Theme/Theme';
 const Home = () => {
     return (
         <div className='inicio'>
+            <div className="bgGradient"></div>
             <div className="bgInicio"></div>
             <img src="img/LOGO TIKTEC.png" alt="logo" className='logo' />
             <p className="place">Champotón, Campeche</p>
