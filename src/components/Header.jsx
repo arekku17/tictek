@@ -35,27 +35,27 @@ const Header = () => {
             <nav>
                 <ul className="navbarHorizontal">
                     <li>
-                        <LinkScroll activeClass="selected" to="inicio" spy={true} smooth={true} offset={-300}>
+                        <LinkScroll activeClass="selected" to="inicio" spy={true}  smooth={true}  offset={-300}>
                             Inicio
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="invitados" spy={true} smooth={true} offset={-50}>
+                        <LinkScroll activeClass="selected" to="invitados" spy={true} smooth={true}>
                             Invitados
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="acercade" spy={true} smooth={true} offset={-50}>
+                        <LinkScroll activeClass="selected" to="acercade" spy={true} smooth={true}>
                             Acerca de
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="detalles" spy={true} smooth={true} offset={-50}>
+                        <LinkScroll activeClass="selected" to="detalles" spy={true} smooth={true}>
                             Detalles
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="patrocinadores" spy={true} smooth={true} offset={-50}>
+                        <LinkScroll activeClass="selected" to="patrocinadores" spy={true} smooth={true}>
                             Patrocinadores
                         </LinkScroll>
                     </li>

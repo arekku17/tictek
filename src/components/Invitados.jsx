@@ -9,6 +9,7 @@ const Invitados = () => {
       <div className="bgInvitados"></div>
 
       <TitleSection title="Invitados" description="Influencers y DJ's que vendrán" />
+      <div className="lineaDivisora"></div>
 
       <TitleSection title="Influencers" />
 
@@ -24,6 +25,8 @@ const Invitados = () => {
         </div>
       </div>
 
+      <div className="lineaDivisora"></div>
+
       <TitleSection title="DJ's"/>
 
       <div className="listInvitados">
@@ -37,6 +40,8 @@ const Invitados = () => {
           }
         </div>
       </div>
+
+      <div className="lineaDivisora"></div>
     </div>
 
   )
