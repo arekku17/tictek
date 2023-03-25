@@ -1,0 +1,47 @@
+.ubicacionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .imagenUbicacion {
+        position: relative;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    iframe{
+        width: 100%;
+    }
+
+    .descripcion {
+        color: white;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: .1em .1em 0 hsl(0, 50%, 30%);
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .bgUbicacion {
+        background: rgb(78, 198, 220);
+        background: -moz-linear-gradient(0deg, rgba(78, 198, 220, 1) 0%, rgba(86, 58, 254, 1) 100%);
+        background: -webkit-linear-gradient(0deg, rgba(78, 198, 220, 1) 0%, rgba(86, 58, 254, 1) 100%);
+        background: linear-gradient(0deg, rgba(78, 198, 220, 1) 0%, rgba(86, 58, 254, 1) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#4ec6dc", endColorstr="#563afe", GradientType=1);
+        position: absolute;
+        width: 100vw;
+        height: 100%;
+        z-index: -999;
+        overflow: hidden;
+
+        @media (max-width: 850px) {
+            font-size: 8vw;
+        }
+
+    }
+}

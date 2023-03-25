@@ -2,6 +2,7 @@ import { Button, ThemeProvider } from '@mui/material'
 import React from 'react'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import { theme } from '../Theme/Theme';
+import { Link } from 'react-router-dom';
 
 const Home = () => {
     return (
@@ -10,9 +11,12 @@ const Home = () => {
             <div className="bgInicio"></div>
             <img src="img/LOGO TIKTEC.png" alt="logo" className='logo' />
             <p className="place">Champotón, Campeche</p>
-            <p className="dateInicio">Mayo 2023</p>
+            <p className="dateInicio">19 Mayo 2023</p>
             <ThemeProvider theme={theme}>
+                <Link to="/boletos">
                 <Button variant="outlined" color="primary" startIcon={<ShoppingBagIcon />} className="buttonBuy" >Comprar Boletos</Button>
+                </Link>
+                
             </ThemeProvider>
 
             <div className="circleContainer">

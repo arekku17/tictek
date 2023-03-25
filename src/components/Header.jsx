@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import { faX } from '@fortawesome/free-solid-svg-icons';
 import { Sidebar } from './Sidebar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
 
@@ -40,18 +41,18 @@ const Header = () => {
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="invitados" spy={true} smooth={true}>
-                            Invitados
-                        </LinkScroll>
-                    </li>
-                    <li>
                         <LinkScroll activeClass="selected" to="acercade" spy={true} smooth={true}>
                             Acerca de
                         </LinkScroll>
                     </li>
                     <li>
-                        <LinkScroll activeClass="selected" to="detalles" spy={true} smooth={true}>
-                            Detalles
+                        <LinkScroll activeClass="selected" to="invitados" spy={true} smooth={true}>
+                            DJ's
+                        </LinkScroll>
+                    </li>
+                    <li>
+                        <LinkScroll activeClass="selected" to="ubicación" spy={true} smooth={true}>
+                            Ubicación
                         </LinkScroll>
                     </li>
                     <li>
@@ -59,12 +60,19 @@ const Header = () => {
                             Patrocinadores
                         </LinkScroll>
                     </li>
+                    <li>
+                        <LinkScroll activeClass="selected" to="contacto" spy={true} smooth={true}>
+                            Contacto
+                        </LinkScroll>
+                    </li>
 
                 </ul>
             </nav>
             <ThemeProvider theme={theme}>
+                <Link to="/boletos">
                 <Button variant="outlined" color="primary" startIcon={<ShoppingBagIcon fontSize="inherit" />}
                     className="buttonBuy" size='large' >Comprar Boletos</Button>
+                </Link>
             </ThemeProvider>
             <button className='buttonMenu' onClick={changeSide}>
                 {side ? <FontAwesomeIcon icon={faX}/> : <FontAwesomeIcon icon={faBars}/>}

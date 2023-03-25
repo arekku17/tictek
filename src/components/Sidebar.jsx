@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-scroll'
 
+import { Link as LinkRouter } from 'react-router-dom';
+
 export const Sidebar = (props) => {
     return (
         <div className={props.open ? "menuSide activeSide" : "menuSide"}>
@@ -11,29 +13,34 @@ export const Sidebar = (props) => {
                     </Link>
                 </li>
                 <li>
-                    <Link activeClass="selected" to="invitados" spy={true} smooth={true} offset={-300}>
-                        Invitados
-                    </Link>
-                </li>
-                <li>
                     <Link activeClass="selected" to="acercade" spy={true} smooth={true} offset={-300}>
                         Acerca de
                     </Link>
+
                 </li>
                 <li>
-                    <Link activeClass="selected" to="detalles" spy={true} smooth={true} offset={-300}>
-                        Detalles
+                    <Link activeClass="selected" to="invitados" spy={true} smooth={true} offset={-300}>
+                        DJ'S
                     </Link>
                 </li>
                 <li>
                     <Link activeClass="selected" to="patrocinadores" spy={true} smooth={true} offset={-300}>
                         Patrocinadores
                     </Link>
+
+                </li>
+                <li>
+                    <Link activeClass="selected" to="Contacto" spy={true} smooth={true} offset={-300}>
+                        Contacto
+                    </Link>
                 </li>
             </ul>
-            <button className='buy'>
-                <p>COMPRAR BOLETOS</p>
-            </button>
+            <LinkRouter to="/boletos">
+                <button className='buy'>
+                    <p>COMPRAR BOLETOS</p>
+                </button>
+            </LinkRouter>
+
         </div>
     )
 }

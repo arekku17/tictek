@@ -8,26 +8,7 @@ const Invitados = () => {
 
       <div className="bgInvitados"></div>
 
-      <TitleSection title="Invitados" description="Influencers y DJ's que vendrán" />
-      <div className="lineaDivisora"></div>
-
-      <TitleSection title="Influencers" />
-
-      <div className="listInvitados">
-        <div className="gridContainer">
-          {
-            invitados.influencers.map(item =>
-              <div className='invitadoContainer' id={item.nombre}>
-                <img src={item.foto} alt={item.nombre} />
-                <p className="nombreInvitado">{item.nombre}</p>
-              </div>)
-          }
-        </div>
-      </div>
-
-      <div className="lineaDivisora"></div>
-
-      <TitleSection title="DJ's"/>
+      <TitleSection title="DJ's" description="DJ's que van a poner ritmo al evento" />
 
       <div className="listInvitados">
         <div className="gridContainer">

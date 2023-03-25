@@ -6,11 +6,14 @@
     position: relative;
 
     .bgAcerca {
-        background: rgb(86, 58, 254);
-        background: -moz-linear-gradient(0deg, rgba(86, 58, 254, 1) 0%, rgba(220, 78, 78, 1) 100%);
-        background: -webkit-linear-gradient(0deg, rgba(86, 58, 254, 1) 0%, rgba(220, 78, 78, 1) 100%);
-        background: linear-gradient(0deg, rgba(86, 58, 254, 1) 0%, rgba(220, 78, 78, 1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#563afe", endColorstr="#dc4e4e", GradientType=1);
+        background-color: rgba(0, 0, 0, 1);
+        background: rgba(0, 0, 0, 1);
+        background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(220, 78, 78, 1)));
+        background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
+        background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(220, 78, 78, 1) 100%);
         filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#dc4e4e', GradientType=0);
         position: absolute;
         width: 100vw;
