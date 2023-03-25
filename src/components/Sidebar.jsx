@@ -30,7 +30,7 @@ export const Sidebar = (props) => {
 
                 </li>
                 <li>
-                    <Link activeClass="selected" to="Contacto" spy={true} smooth={true} offset={-300}>
+                    <Link activeClass="selected" to="contacto" spy={true} smooth={true} offset={-300}>
                         Contacto
                     </Link>
                 </li>
