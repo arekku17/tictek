@@ -1,11 +1,11 @@
 export const invitados = {
     djs: [
         {
-            nombre: "Cesar Lara",
+            nombre: "DJ Cesar Lara",
             foto: "/img/cesarLara.jpg",
         },
         {
-            nombre: "Dj Reyna",
+            nombre: "DJ Jordan Alvarado",
             foto: "/img/otrodj.jpg",
         }
     ]
