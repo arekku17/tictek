@@ -70,6 +70,22 @@
         color: $secondary-color;
     }
 
+    
+    .quitarEfecto{
+        font-size: 1.5rem;
+        border: rgb(168, 168, 168) 1px solid;
+        padding: 10px 20px;
+        margin-top: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        &:hover {
+            border: #fff 1px solid;
+        }
+    }
+
+    .disable{
+        display: none !important;
+    }
 
     .circleContainer {
         display: flex;
@@ -147,5 +163,10 @@
     }
 
 
+    .contador{
+        text-align: center;
+        font-weight: bold;
+        color: $secondary-color;
+    }
 
 }

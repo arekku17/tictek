@@ -68,6 +68,23 @@ const Comprar = () => {
                             <button onClick={() => enviarMensaje("VIP")} className="pricing-action">Comprar</button>
                         </div>
                     </div>
+
+                    <div className="pricing-table recommended">
+                        <h3 className="pricing-title">PROMO</h3>
+                        <div className="price">$500<sup>/ x 2 boletos</sup></div>
+                        <ul className="table-list">
+                            <li>Acceso <span>al evento</span></li>
+                            <li>Pinturas <span>incluido</span></li>
+                            <li>Espacio y palapas <span className="unlimited">asegurado</span></li>
+                            <li>Acceso a consumo <span className="unlimited">limitado</span></li>
+                            <li>Tobogan <span className="unlimited">por una hora</span></li>
+                            <li>Servicio <span>de meseros</span></li>
+                        </ul>
+                        <div className="table-buy">
+                            <p>$500<sup>/ x 2 boletos</sup></p>
+                            <button onClick={() => enviarMensaje("PROMO 2x$500")} className="pricing-action">Comprar</button>
+                        </div>
+                    </div>
                 </div>
 
 

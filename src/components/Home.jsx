@@ -1,10 +1,15 @@
 import { Button, ThemeProvider } from '@mui/material'
-import React from 'react'
+import React, { useState } from 'react'
 import ShoppingBagIcon from '@mui/icons-material/ShoppingBag';
 import { theme } from '../Theme/Theme';
 import { Link } from 'react-router-dom';
+import Countdown from 'react-countdown';
+import TitleSection from './TitleSection';
 
 const Home = () => {
+
+    const [efectos, setEfectos] = useState(true);
+
     return (
         <div className='inicio'>
 
@@ -14,12 +19,14 @@ const Home = () => {
             <p className="dateInicio">19 Mayo 2023</p>
             <ThemeProvider theme={theme}>
                 <Link to="/boletos">
-                <Button variant="outlined" color="primary" startIcon={<ShoppingBagIcon />} className="buttonBuy" >Comprar Boletos</Button>
+                    <Button variant="outlined" color="primary" startIcon={<ShoppingBagIcon />} className="buttonBuy" >Comprar Boletos</Button>
                 </Link>
-                
+
             </ThemeProvider>
 
-            <div className="circleContainer">
+            <div className="quitarEfecto" onClick={() => setEfectos(!efectos)}>{efectos ? "Quitar efectos" : "Poner efectos"}</div>
+
+            <div className={`circleContainer ${efectos ? "" : "disable"}`}>
                 <div class="circle"></div>
                 <div class="circle2"></div>
 
@@ -33,6 +40,23 @@ const Home = () => {
                 </svg>
             </div>
 
+            <TitleSection title="Tiempo" description="restante para el TikTec 2023"></TitleSection>
+
+            <Countdown
+                date={"2023-05-19T16:00:00"}
+                renderer={props => {
+                    if(props.days === 0){
+                        return <div className='contador'>En {props.hours} horas</div>
+                    }
+                    else if (props.hours === 1){
+                        return <div className='contador'>En {props.hours} hora</div>
+                    }
+                    else{
+                        return <div className='contador'>En {props.days} días y {props.hours} horas</div>
+                    }
+                    
+                }}
+            />
 
         </div>
     )

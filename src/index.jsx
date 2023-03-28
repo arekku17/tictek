@@ -9,11 +9,13 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import Comprar from './components/Comprar';
+import ScrollToTop from './components/ScrollToTop';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <>
+      <ScrollToTop />
       <Header />
       <App />
     </>
@@ -21,6 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/boletos",
     element: <>
+      <ScrollToTop />
       <Comprar />
     </>
   },

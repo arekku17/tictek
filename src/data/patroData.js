@@ -48,6 +48,30 @@ export const patrocinadores = {
             foto: "/img/patro/papeleria.png",
             link: "https://www.facebook.com/margarita.uicabchan"
         },
+        {
+            foto: "/img/patro/taqueria alessandro.png",
+            link: "https://www.facebook.com/profile.php?id=100088343915854"
+        },
+        {
+            foto: "/img/patro/Cine Atlantis.png",
+            link: "https://www.facebook.com/cineatlantisoficial"
+        },
+        {
+            foto: "/img/patro/ENERGYM.png",
+            link: ""
+        },
+        {
+            foto: "/img/patro/FLAMINGO.png",
+            link: "https://www.facebook.com/profile.php?id=100089633870987"
+        },
+        {
+            foto: "/img/patro/UKD.png",
+            link: "https://www.facebook.com/profile.php?id=100077643830839"
+        },
+        {
+            foto: "/img/patro/Medussa.png",
+            link: "https://www.facebook.com/profile.php?id=100086092737995"
+        },
     ]
 }
     

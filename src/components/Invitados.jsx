@@ -14,10 +14,13 @@ const Invitados = () => {
         <div className="gridContainer">
           {
             invitados.djs.map(item =>
-              <div className='invitadoContainer' id={item.nombre}>
-                <img src={item.foto} alt={item.nombre} />
-                <p className="nombreInvitado">{item.nombre}</p>
-              </div>)
+              <a href={item.url} target="_blank" rel="noreferrer">
+                <div className='invitadoContainer' id={item.nombre}>
+                  <img src={item.foto} alt={item.nombre} />
+                  <p className="nombreInvitado">{item.nombre}</p>
+                </div>
+              </a>
+            )
           }
         </div>
       </div>

@@ -10,9 +10,18 @@ const Contacto = () => {
             <TitleSection title="Contacto" description="Nuestros medios de contacto" />
             <div className="listContacto">
                 <div className="itemContacto">
-                    <WhatsAppIcon sx={{ fontSize: 60, color: "white" }} />
-                    <p>+51 981 204 4308</p>
-
+                    <div className="whatsapp">
+                        <WhatsAppIcon sx={{ fontSize: 60, color: "white" }} />
+                        <p>+52 981 204 4308</p>
+                    </div>
+                    <div className="whatsapp">
+                        <WhatsAppIcon sx={{ fontSize: 60, color: "white" }} />
+                        <p>+52 982 131 37 85</p>
+                    </div>
+                    <div className="whatsapp">
+                        <WhatsAppIcon sx={{ fontSize: 60, color: "white" }} />
+                        <p>+52 982 132 99 81</p>
+                    </div>
                 </div>
                 <a href='https://www.facebook.com/tikteccolorfest' target="_blank" rel="noreferrer">
                     <div className="itemContacto">
