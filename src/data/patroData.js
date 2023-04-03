@@ -1,6 +1,10 @@
 export const patrocinadores = {
     patrocinadores: [
         {
+            foto: "/img/patro/pizzeria.png",
+            link: "https://www.facebook.com/Alejandrapizzeria"
+        },
+        {
             foto: "/img/patro/Akrab.png",
             link: "https://www.facebook.com/akrabstudio"
         },
@@ -71,6 +75,14 @@ export const patrocinadores = {
         {
             foto: "/img/patro/Medussa.png",
             link: "https://www.facebook.com/profile.php?id=100086092737995"
+        },
+        {
+            foto: "/img/patro/seven shop.png",
+            link: "https://www.facebook.com/profile.php?id=100078737782481"
+        },
+        {
+            foto: "/img/patro/CAFETEROS.png",
+            link: ""
         },
     ]
 }
