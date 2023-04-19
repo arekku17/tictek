@@ -1,13 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import ModalComprar from './ModalComprar';
 
 const Comprar = () => {
 
-    const enviarMensaje = (tipo) => {
-        let url = "https://api.whatsapp.com/send?text=¡Hola!, quisiera comprar un boleto "+ tipo +" por favor.&phone=529812044308"
-        window.open(url);
-    }
 
+    const [modalIsOpen, setIsOpen] = useState(false);
+    const [tipoBoleto, setTipoBoleto] = useState("");
+
+    const abrirModal = (tipo) => {
+        setTipoBoleto(tipo);
+        setIsOpen(true);
+    }
+   
     return (
         <>
             <div className="context">
@@ -47,7 +52,7 @@ const Comprar = () => {
                         </ul>
                         <div className="table-buy">
                             <p>$150<sup>/ cada boleto</sup></p>
-                            <button onClick={() => enviarMensaje("General")} className="pricing-action">Comprar</button>
+                            <button onClick={() => abrirModal("General")} className="pricing-action">Comprar</button>
                         </div>
                     </div>
 
@@ -61,7 +66,7 @@ const Comprar = () => {
                         </ul>
                         <div className="table-buy">
                             <p>$200<sup>/ x 2 boletos</sup></p>
-                            <button onClick={() => enviarMensaje("PROMO 2x$200")} className="pricing-action">Comprar</button>
+                            <button onClick={() => abrirModal("$200 x 2")} className="pricing-action">Comprar</button>
                         </div>
                     </div>
 
@@ -79,7 +84,7 @@ const Comprar = () => {
                         </ul>
                         <div className="table-buy">
                             <p>$350<sup>/ cada boleto</sup></p>
-                            <button onClick={() => enviarMensaje("VIP")} className="pricing-action">Comprar</button>
+                            <button onClick={() => abrirModal("VIP")} className="pricing-action">Comprar</button>
                         </div>
                     </div>
 
@@ -96,13 +101,15 @@ const Comprar = () => {
                         </ul>
                         <div className="table-buy">
                             <p>$500<sup>/ x 2 boletos</sup></p>
-                            <button onClick={() => enviarMensaje("PROMO 2x$500")} className="pricing-action">Comprar</button>
+                            <button onClick={() => abrirModal("$500 x 2")} className="pricing-action">Comprar</button>
                         </div>
                     </div>
                 </div>
 
 
             </div>
+
+            <ModalComprar modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} tipo={tipoBoleto} ></ModalComprar>
         </>
 
 
