@@ -84,6 +84,26 @@ export const patrocinadores = {
             foto: "/img/patro/CAFETEROS.png",
             link: ""
         },
+        {
+            foto: "/img/patro/aguas-locas.png",
+            link: "https://www.facebook.com/profile.php?id=100089723928123"
+        },
+        {
+            foto: "/img/patro/aissu.png",
+            link: "https://www.facebook.com/profile.php?id=100083289785019"
+        },
+        {
+            foto: "/img/patro/mariangel.png",
+            link: "https://www.facebook.com/profile.php?id=100065405382636"
+        },
+        {
+            foto: "/img/patro/micheladas.png",
+            link: "https://www.facebook.com/MicheladasLuka"
+        },
+        {
+            foto: "/img/patro/Pngyb.png",
+            link: "https://www.facebook.com/YayaisBakery"
+        },
     ]
 }
     

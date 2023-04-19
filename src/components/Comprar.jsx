@@ -51,6 +51,20 @@ const Comprar = () => {
                         </div>
                     </div>
 
+                    <div className="pricing-table">
+                        <h3 className="pricing-title">General PROMO</h3>
+                        <div className="price">$200<sup>/ x 2 boletos</sup></div>
+                        <ul className="table-list">
+                            <li>Acceso <span>al evento</span></li>
+                            <li>Pinturas <span>incluido</span></li>
+                            <li>Espacio <span className="unlimited">sobre disponibilidad</span></li>
+                        </ul>
+                        <div className="table-buy">
+                            <p>$200<sup>/ x 2 boletos</sup></p>
+                            <button onClick={() => enviarMensaje("PROMO 2x$200")} className="pricing-action">Comprar</button>
+                        </div>
+                    </div>
+
                     <div className="pricing-table recommended">
                         <h3 className="pricing-title">VIP</h3>
                         <div className="price">$350<sup>/ cada boleto</sup></div>
@@ -70,7 +84,7 @@ const Comprar = () => {
                     </div>
 
                     <div className="pricing-table recommended">
-                        <h3 className="pricing-title">PROMO</h3>
+                        <h3 className="pricing-title">VIP PROMO</h3>
                         <div className="price">$500<sup>/ x 2 boletos</sup></div>
                         <ul className="table-list">
                             <li>Acceso <span>al evento</span></li>
