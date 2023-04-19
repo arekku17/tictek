@@ -33,7 +33,10 @@ const Contacto = () => {
             <div className="enviarMensaje" onClick={() => window.open("https://api.whatsapp.com/send?text=¡Hola! quiero hablar sobre el evento TikTec 2023&phone=529812044308")}>
                 Enviar Mensaje
             </div>
-
+            <div className="desarrollado">
+                <p>Diseñado y desarrollado por:</p>
+                <a href="https://arekku-portfolio.netlify.app/"><img src="/img/logo arekku white.png" alt="logo arekku" /></a>  
+            </div>
         </div>
     )
 }

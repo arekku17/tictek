@@ -110,6 +110,11 @@ const Comprar = () => {
             </div>
 
             <ModalComprar modalIsOpen={modalIsOpen} setIsOpen={setIsOpen} tipo={tipoBoleto} ></ModalComprar>
+
+            <div className="desarrollado">
+                <p>Diseñado y desarrollado por:</p>
+                <a href="https://arekku-portfolio.netlify.app/"><img src="/img/logo arekku white.png" alt="logo arekku" /></a>  
+            </div>
         </>
 
 
