@@ -40,7 +40,7 @@ const ModalComprar = (props) => {
                 <div className="vendedoresContainer">
                     {vendedores.rp.map(vendedor => (
                         <div className="vendedorContainer">
-                            <p>Nombre: {vendedor.nombre}</p>
+                            <p>{vendedor.nombre}</p>
                             <button onClick={() => enviarMensaje(props.tipo, vendedor.numero)} className="button-85">Comprar</button>
                         </div>
                     ))}
