@@ -58,18 +58,17 @@ const Comprar = () => {
 
                     <div className="pricing-table recommended">
                         <h3 className="pricing-title">VIP</h3>
-                        <div className="price">$350<sup>/ cada boleto</sup></div>
+                        <div className="price">$280<sup>/ cada boleto</sup></div>
                         <ul className="table-list">
                             <li>Acceso <span>al evento</span></li>
                             <li>Pinturas <span>incluido</span></li>
                             <li>Espacio y palapas <span className="unlimited">asegurado</span></li>
-                            <li>Playera <span>del evento</span></li>
                             <li>Acceso a consumo <span className="unlimited">limitado</span></li>
                             <li>Tobogan <span className="unlimited">por una hora</span></li>
                             <li>Servicio <span>de meseros</span></li>
                         </ul>
                         <div className="table-buy">
-                            <p>$350<sup>/ cada boleto</sup></p>
+                            <p>$280<sup>/ cada boleto</sup></p>
                             <button onClick={() => abrirModal("VIP")} className="pricing-action">Comprar</button>
                         </div>
                     </div>
